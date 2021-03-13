@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Taller 4 </title>
+		<link rel="stylesheet" href="Estilo2.css">
+	</head>
+	<body>
+		<center>
+			<h1>Ejercicio del grupo 3</h1>
+			<script type="text/javascript">
+				 function AbrirVentana(){
+				 	window.open("ejerccio2.html", "", "width: 600, height=400" )
+				 }
+				function suma(numero1,numero2){
+				 alert("La suma de los dos numeros es: "+ (numero1+numero2));
+				 }
+				function resta(numero1,numero2){
+				 alert("La resta de los dos numeros es: "+ (numero1-numero2));
+				 }
+				function multiplicacion(numero1,numero2){
+				 alert("La multiplicacion de los dos numeros es: "+ (numero1*numero2));
+				 }
+				function division(numero1,numero2){
+				 alert("La division de los dos numeros es: "+ (numero1/numero2));
+				 }
+				 var numero1, numero2;
+				 numero1= parseInt(prompt("Introduce el primer numero:"));
+				 numero2= parseInt(prompt("Introduce el segundo numero:"));
+			</script>
+			<button onclick="suma(numero1,numero2)">Suma</button>
+			<button onclick="resta(numero1,numero2)">Resta</button>
+			<button onclick="multiplicacion(numero1,numero2)">Multiplicacion</button>
+			<button onclick="division(numero1,numero2)">Division</button><br><br>
+			<button onclick="AbrirVentana()">Octal a decimal</button><br><br>
+		</center>
+	</body>
+</html>
+	
+		

@@ -1,0 +1,23 @@
+
+blockquote{
+	line-height: 25px; 
+	text-align: center;
+	background-color: #83DAF8    ;
+	width:60%;
+	height: 400px;
+	padding:8px;
+	margin:100px ;
+	margin-left: 250px;
+}
+
+h3{
+	background-color: #03BCFD ;
+	text-align: center;/*Centrado del titulo*/
+	color:  #004963  ;
+	padding: 10px;
+}
+
+body{
+	font-family: Verdana, Calibri, sans-serif; 
+	background-color: #E4F7FE   ;
+}

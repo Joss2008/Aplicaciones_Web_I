@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Taller 4 </title>
+		<link rel="stylesheet" href="Estilo2.css">
+	</head>
+	<body>
+		<center>
+			<script type="text/javascript">
+				function octal1() {
+				    var M = document.getElementById("resultado");
+				    var Octal = parseInt(document.getElementById("octal").value);
+				    var octaldecimal = parseInt(Octal, 8);
+				    M.innerHTML = "El número Octal " + Octal + " en decimal es: " + octaldecimal;
+				}
+			</script>
+			<blockquote>
+				<span>1.-Tranforme un octal a decimal</span>
+			    <div>
+			        <input type="number" id="octal" placeholder="Octal"><br>
+			        <button class ="boton1" onclick="octal1()">Calcular</button>
+			    </div>
+			    <div id="areaResultado">
+			        <p class="resultados" id="resultado"></p>
+			    </div>
+			</blockquote>
+		</center>
+	</body>
+</html>
+	
+		

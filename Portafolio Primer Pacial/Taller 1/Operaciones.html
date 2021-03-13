@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio de ingreso de datos</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var n1 = prompt("Dime un numero");
+		    var n2 = prompt("Dime otro numero");
+		    var contador =0;
+		    while(contador <5){
+		    	contador++;
+		    	if(contador==1){
+				    alert("La suma de "+ n1 + " y "+ n2 + " es: ");
+			    	alert(parseInt(n1)+parseInt(n2));
+		    	}else{
+		    		if(contador==2){
+				    	alert("La resta de "+ n1 + " y "+ n2 + " es: ");
+				    	alert(parseInt(n1)-parseInt(n2));
+		    		}else{
+		    			if(contador==3){
+					    	alert("La multiplicacion de "+ n1 + " y "+ n2 + " es: ");
+					    	alert(parseInt(n1)*parseInt(n2));
+		    			}else{
+		    				if(contador==4){
+		    					alert("La division de "+ n1 + " y "+ n2 + " es: ");
+		    					alert(parseInt(n1)/parseInt(n2));
+		    				}else{
+						    	alert("El MOD de "+ n1 + " y "+ n2 + " es: ");
+						    	alert(parseInt(n1)%parseInt(n2));
+		    				}
+		    			}
+		    		}
+		    	}
+		    }
+		</script>    
+	</body>
+</html>

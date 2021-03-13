@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="formula.css">
+		<meta charset="UTF-8" />
+		<title>Taller 4 </title>
+		<script src="formula.js"></script>
+	</head>
+	<body>
+		<h1 align="center">Formulario de registro</h1>
+		<form name="form" action="#" methond="POST"  onsubmit="return validacion(), guardadatos() ">
+		  <p>Nombre:<br><input type="text" name="nombre" id="name" placeholder="Ingrese tu nombre" /><br></br>
+		  	Apellido:<br><input type="text" name="apellido" id="apelli" placeholder="Ingrese tu apellido"><br></br>
+		  	Telefono:<br><input type="tel" name="telefono" id="telefono" maxlength="10"  placeholder="Ingresa su telefono" ><br></br>
+		  	Fecha:<br><input type="text" id="date"  placeholder="DD/MM/AA" ><br></br>
+		  	Contraseña:<br><input type="password" name="contraseña" id="contra1"  placeholder="Ingrese tu contraseña" ><br></br>
+			Contraseña:<br><input type="password" name="contraseña" id="contra2" placeholder="Ingrese de nuevo la contraseña"><br></br><br></br>
+		  	<p> Para poder enviar el formulario necesita aceptar todos los términos </p> <p> 
+		  	 <p><input type="checkbox" name="Web" value="gusta" id="check"> Aceptar terminos<br></p>
+			<button onclick="">Enviar</button>
+		</form>
+		<input type="button" name="chequeaCookie" value="Chequear las cookies" onclick="MostrarDatos();">
+	</body>
+</html>

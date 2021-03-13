@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Formulario de Registro 
+    </title>
+    <link href="ESTILO.css" rel="stylesheet" />
+  </head>
+  <body>
+  	<section>
+      <blockquote>
+        <font >
+          <h2> Formulario De Registro </h2>
+        </font>
+        <font class="Letras">
+          <form action="" method="get">
+          	<fieldset>
+  				    <legend>Datos personales</legend>
+      				<p> Nombres y Apellidos: 
+            		<input type="text" id="nombre" name="name_control" autofocus required placeholder="Escriba sus dos nombres"/>  
+            		<input type="text" id= "apellido" name="name_control" autofocus required placeholder="Escriba sus dos apellidos"/>
+           		</p>
+           		<p> Fecha de nacimiento: 
+              		<input type="date" name="date_control" />
+            	</p>
+            	<p>Nacionalidad: 
+              		<input type="text" name="nacionalidad" size="20" placeholder="¿De donde es usted?">
+            	</p>
+             	<p>Teléfono: 
+              		<input type="tel" name="tel_control" id="telefono" />
+            	</p>
+             	<p> Correo electrónico: 
+              		<input type="email" name="email_control" required id="correo" />
+            	</p>
+            	<p>Edad:
+              		<input type="number" name="numero" step="any" placeholder="Edad">
+            	</p>
+
+            	<p>Sexo:
+              		<input type="radio" name="hm" value="h" required> Hombre
+             		<input type="radio" name="hm" value="m" required> Mujer
+            	</p>
+            	<p>Seleccione su color favorito: 
+              		<input type="color" name="color_control" />
+            	</p>
+			      </fieldset>
+			      <fieldset>
+  			      <legend>Datos relevantes</legend>
+    	        <p> Seleccione cuales son de su interes <br>
+                <label for="test">
+                  <input type="checkbox" name="test" id="test"> Arte Grafico
+                  <input type="checkbox" name="test" id="test">Informatica <br>
+                  <input type="checkbox" name="test" id="test"> Musica
+                  <input type="checkbox" name="test" id="test">Television
+                </label>
+            	</p>
+             	<p> Defina su personalidad <br>
+              		<textarea name="texto" rows="4" cols="40"  id="textos"placeholder="Escriba algo" ></textarea>
+            	</p>
+            </fieldset>
+            <p>
+              <input type="submit" value="Enviar" id="primero">
+            </p>
+          </form>
+        </font>
+      </blockquote>
+    </section>
+  </body>
+</html>
