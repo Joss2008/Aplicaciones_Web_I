@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+      <script src="index.js"></script>
+      <link rel="stylesheet" href="estilo.css" >
+      <script>        
+        function mostrar_datos(){
+          fetch('datos.json')
+          .then(function(res){
+            return res.json();
+          })
+          .then(function(data){
+            console.log(resultado);
+            let html='';
+            data.forEach(function(data) {
+              html+=`
+              <table  class="normal" summary="Tabla genérica">
+                <tr>
+                  <th>Nombre</th>
+                  <th>Apellidos </th>
+                </tr>
+                <tr>
+                  <td> ${data.nombre} </td>
+                  <td> ${data.apellido} </td>
+                </tr>
+              </table>  
+              `
+            });
+            document.getElementById('resultado').innerHTML=html;
+          })
+        }
+      </script>
+    </head>
+    <body>
+      <center>
+        <div class="container"><br>
+            <h2>Consumos de servicio WEB</h2><br>
+          <div id="informacion">
+            <button  type="button" class="btn btn-outline-success" id="botonjson" onclick="mostrar_datos();"> JSON </button><br><br>
+          </div>
+          <div class="container">
+            <div id="resultado"></div>
+          </div>
+        </div>
+      </center>
+    </body>
+  </html>

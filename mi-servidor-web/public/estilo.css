@@ -1,0 +1,20 @@
+ .normal {
+    width: 250px;
+    border: 1px solid #000;
+    border-collapse: collapse;
+  }
+  .normal th, .normal td {
+    border: 1px solid #000 ;
+    line-height: 150%;
+  }
+  .normal {
+    table-layout: fixed;
+    width: 400px;
+    font: 18px "Courier";
+  }
+  body {
+    background-image: url("rosa.jpg") ;
+  }
+  h2{
+    font: 24px "Time News Roman " bold;
+  }
