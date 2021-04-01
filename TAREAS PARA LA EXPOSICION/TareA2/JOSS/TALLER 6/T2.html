@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Taller 6</title>
+		<link href="estilos.css" rel="stylesheet" />
+		<div><img src="img/uleam.jpg" width="500"/></div>
+		<script src="validacion.js"></script>
+		<h1>Formulario de Registro</h1>
+	</head>
+	<body>
+		<form name="form" action="#" methond="POST"  onsubmit="return validacion();">
+		  <p>Nombre:<input type="text" name="nombre" id="name" placeholder="Ingrese tu nombre" /><br></br>
+		  	Apellido:<input type="text" name="apellido" id="apelli" placeholder="Ingrese tu apellido"><br></br>
+		  	Correo:<input type="text" name="correo" id="correo" placeholder="Ingrese tu correo"><br></br>
+		  	Telefono:<input type="tel" name="telefono" id="telefono" maxlength="10"  placeholder="Ingresa su telefono" ><br></br>
+		  	Fecha:<input type="text" id="date"  placeholder="DD/MM/AA" ><br></br>
+		  	Contraseña:<input type="password" name="contraseña" id="contra1"  placeholder="Ingrese tu contraseña" ><br></br>
+			Contraseña:<input type="password" name="contraseña" id="contra2" placeholder="Ingrese de nuevo la contraseña"><br></br><br></br>
+		  	<p> Para poder enviar el formulario necesita aceptar todos los términos </p> <p> 
+		  	 <p><input type="checkbox" name="Web" value="gusta" id="check"> Aceptar terminos<br></p>
+			<button onclick="">Enviar datos</button>
+		</form>
+	</body>
+</html>

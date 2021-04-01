@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tarea2</title>
+		<link href="estilos.css" rel="stylesheet" />
+		<div><img src="img/uleam.jpg" width="500"/></div>
+		<script src="validacion.js"></script>
+		<h1>Formulario de Registro</h1>
+	</head>
+	<body>
+
+		<form name="form" action="#" methond="POST"  onsubmit="return validacion();">
+		  <p>Nombre:<input type="text" name="nombre" id="campo" placeholder="Ingrese tu nombre" required pattern="[A-Za-z]{5,40}" required="" title="longitud minima: 5. longitud Maxima: 40" /><br></br>
+			Apellido:<input type="text" name="apellido" id="campo1" placeholder="Ingrese tu apellido"required pattern="[A-Za-z]{5,40}"  title="longitud minima: 5. longitud Maxima: 40" required=""><br></br>
+			DNI: <input type="text" name="dni"id ="dni" value="" size="10" maxlength="9" title="8 numeros y una letra Mayuscula"onchange="validaDNI();"placeholder="Ingese el DNI" /> <br></br>
+			Email:<input type="" name="correo" id="campo2" placeholder="Ingrese su email" title="xxxx@xxx.com"onchange="validaemail();" required=""><br></br>
+			Contraseña:<input type="password" name="contraseña" id="campo3"  title="longitud minima: 8. longitud Maxima: 16 al menos una minuscula y una mayuscula" placeholder="Ingrese tu contraseña" onchange="validarcontraseña();" required=""><br></br>
+			Contraseña:<input type="password" name="contraseña" id="campo6" placeholder="Ingrese de nuevo la contraseña"onchange="validarcontraseña1();" required=""><br></br>
+			Telefono:<input type="tel" name="telefono" id="telefono" maxlength="10"  placeholder="Ingresa su telefono"onchange="validaTelefono();, validarcamponumerico();" required=""><br></br>
+			URL: <input type="url" id="url" name="url_control" onchange="validateUrl();" placeholder="Escribe la URL de tu página web personal" /><br></br>
+			Fecha:<input type="text" id="campo5"  placeholder="DD/MM/AA" onchange="fechas();"required=""><br></br>
+			Sexo : <input type="radio" name ="sexo" value ="H" checked/>Hombre 
+		  	<input type="radio" name ="sexo" value ="M"  checked/>Mujer </p>  
+		  	<p> Intereses Educativos: </p> <p> <input type="checkbox" name="Web" value="gusta" id="check" onchange="comprobar()"> Aplicaciones Web<br>
+   			<input type="checkbox" name="base" value="gusta" id="check" onchange="comprobar()"> Base de Datos<br>
+    		<input type="checkbox" name="aso" value="gusta" id="check" onchange="comprobar()"> Aplicaicon de Sistemas Operativos </p>
+			<p>Mensaje:</p> <textarea name="mensaje" rows="5" cols="35" placeholder="ingresa tu mensaje "></textarea>
+			<br></br>
+			<button onclick="validacion();">Enviar datos</button>
+		</form>
+	</body>
+</html>
